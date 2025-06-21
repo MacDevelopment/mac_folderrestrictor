@@ -16,7 +16,7 @@ namespace FolderRestrictor
         public LoginForm()
         {
             InitializeComponent();
-            btnChangePassword.Enabled = false; // Start disabled
+            btnChangePassword.Enabled = false;
         }
 
         private void btnOK_Click(object sender, EventArgs e)
@@ -63,27 +63,18 @@ namespace FolderRestrictor
             btnCancel = new Button();
             btnChangePassword = new Button();
             SuspendLayout();
-            // 
-            // lblPrompt
-            // 
             lblPrompt.AutoSize = true;
             lblPrompt.Location = new Point(12, 18);
             lblPrompt.Name = "lblPrompt";
             lblPrompt.Size = new Size(127, 15);
             lblPrompt.TabIndex = 0;
             lblPrompt.Text = "Enter admin password:";
-            // 
-            // txtPassword
-            // 
             txtPassword.Location = new Point(15, 44);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '●';
             txtPassword.Size = new Size(257, 23);
             txtPassword.TabIndex = 1;
             txtPassword.TextChanged += txtPassword_TextChanged;
-            // 
-            // btnOK
-            // 
             btnOK.Location = new Point(15, 80);
             btnOK.Name = "btnOK";
             btnOK.Size = new Size(75, 23);
@@ -91,9 +82,6 @@ namespace FolderRestrictor
             btnOK.Text = "OK";
             btnOK.UseVisualStyleBackColor = true;
             btnOK.Click += btnOK_Click;
-            // 
-            // btnCancel
-            // 
             btnCancel.Location = new Point(107, 80);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(75, 23);
@@ -101,9 +89,6 @@ namespace FolderRestrictor
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = true;
             btnCancel.Click += btnCancel_Click;
-            // 
-            // btnChangePassword
-            // 
             btnChangePassword.Location = new Point(198, 73);
             btnChangePassword.Name = "btnChangePassword";
             btnChangePassword.Size = new Size(100, 39);
@@ -111,9 +96,6 @@ namespace FolderRestrictor
             btnChangePassword.Text = "Change Password";
             btnChangePassword.UseVisualStyleBackColor = true;
             btnChangePassword.Click += btnChangePassword_Click;
-            // 
-            // LoginForm
-            // 
             ClientSize = new Size(310, 121);
             Controls.Add(btnChangePassword);
             Controls.Add(btnCancel);
