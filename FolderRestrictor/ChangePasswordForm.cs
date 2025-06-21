@@ -6,7 +6,6 @@ namespace FolderRestrictor
 {
     public partial class ChangePasswordForm : Form
     {
-        // Declare UI controls
         private Label lblCurrent;
         private Label lblNew;
         private Label lblConfirm;
